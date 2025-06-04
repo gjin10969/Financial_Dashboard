@@ -144,12 +144,12 @@ for initial_mirrorx in tqdm(mirrorxaccount, desc='Processing to SQL'):
     conn = connect_to_mysql()
     
     csv_file_path = os.path.join(
-        r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\mirrorxfolder', 
+        r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\mirrorxfolder', 
         f'{initial_mirrorx}_4H_continuing_trades.csv'
     )
     
     your_account_csv_path = os.path.join(
-        r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\mirrorxfolder',
+        r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\mirrorxfolder',
         f'{your_account_account}.csv'
     )
     
@@ -164,7 +164,7 @@ for initial_mirrorx in tqdm(mirrorxaccount, desc='Processing to SQL'):
     
     conn.close()
 
-    ascii_banner = pyfiglet.figlet_format("ALGOFORCE DASHBOARD!!")
+    ascii_banner = pyfiglet.figlet_format("financial DASHBOARD!!")
     print(ascii_banner)
 
 print("processing cache data please wait for a while.")

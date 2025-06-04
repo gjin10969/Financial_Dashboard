@@ -56,8 +56,8 @@ if __name__ == "__main__":
     
     # mod_run = '_'.join(run_name.split('_')[:2])
     
-    models_dir = r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115'
-    output_dir = r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\output'
+    models_dir = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115'
+    output_dir = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\backtest_implementation_ninja\validate_trades\output'
     os.makedirs(output_dir, exist_ok = True)
 
     # # Parameters for getting the data

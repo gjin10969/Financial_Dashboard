@@ -185,7 +185,7 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 base_dir = os.path.dirname(script_dir)
 
 print(base_dir)
-# base_dir = r"..\AlgoforceDashboard"  # Adjust as needed
+# base_dir = r"..\financialDashboard"  # Adjust as needed
 
 # Change the current working directory to base_dir
 os.chdir(base_dir)
@@ -222,7 +222,7 @@ def main():
                     read_csv_and_insert_to_mysql(conn, csv_file_path, lower_table)
                     print(f"Data inserted into {table} SQL!")
 
-                    ascii_banner = pyfiglet.figlet_format("ALGOFORCE DASHBOARD!!")
+                    ascii_banner = pyfiglet.figlet_format("financial DASHBOARD!!")
                     print(ascii_banner)
 
                 else:

@@ -21,7 +21,7 @@
 #     print(f"Error creating tables: {e}")
 
 # # Define the static directory path
-# static_dir = r"..\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115"
+# static_dir = r"..\financialDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115"
 
 # # Define the Pydantic model
 # class Item(BaseModel):

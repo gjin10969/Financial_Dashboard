@@ -76,7 +76,7 @@ async def all_metrics_json_data(start_date, end_date):
         latest_entry = None
         latest_timestamp = datetime.min  # Initialize with the earliest possible timestamp
         
-        file_path = r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\computation_data_app\account_metrics.json'
+        file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\computation_data_app\account_metrics.json'
         
         # Print the current working directory
         print(f"Current working directory: {os.getcwd()}")
@@ -158,7 +158,7 @@ async def metrics_json_data(start_date, end_date, accounts):
         latest_entry = None
         latest_timestamp = datetime.min
         
-        file_path = r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\computation_data_app\account_metrics.json'
+        file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\computation_data_app\account_metrics.json'
         
         # Print the current working directory
         print(f"Current working directory: {os.getcwd()}")
@@ -269,7 +269,7 @@ async def data_computations(cached_data, start_date, end_date, mirror_accounts, 
             api_data = [entry for entry in api_data if entry.get('symbol') in symbols]
 
         df = pd.DataFrame(api_data)
-        # df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\storage\data.csv", index=False)
+        # df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\storage\data.csv", index=False)
         df['date'] = pd.to_datetime(df['date']).dt.date
 
         start_date_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
@@ -840,7 +840,7 @@ async def value():
     df = pd.DataFrame(cached_data)
 
     # Save DataFrame to CSV
-    # df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\storage\cached_data.csv", index=False)
+    # df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\storage\cached_data.csv", index=False)
 
     # Create tasks for concurrent execution
     if cached_data is None:

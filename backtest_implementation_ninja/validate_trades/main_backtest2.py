@@ -57,7 +57,7 @@ def log_accuracy(symbol, file, log):
     # mod_run = '_'.join(run_name.split('_')[:2])
     
     
-models_dir = r'..\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115'
+models_dir = r'..\financialDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115'
 output_dir = r'..\static\backtest_outputs'
 os.makedirs(output_dir, exist_ok = True)
 

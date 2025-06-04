@@ -23,9 +23,9 @@
 
 # your_account_init_balance = 12215.2
 
-# your_account_binance_data = "C:\\Users\\User\\Documents\\AlgoforceDashboard_AUG\\AlgoforceDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
-# fund_binance_data = "C:\\Users\\User\\Documents\\AlgoforceDashboard_AUG\\AlgoforceDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
-# # your_account_binance_data = "C:\\Users\\User\\Documents\\AlgoforceDashboard_AUG\\AlgoforceDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
+# your_account_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
+# fund_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
+# # your_account_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
 
 # def your_account_read_csv_data():
 #     """Read CSV file and filter data between starting and ending dates."""
@@ -164,9 +164,9 @@
 
 # def create_connection(database_name):
 #     connection = mysql.connector.connect(
-#         host="algoforce-rds.cl6akmuiy6oy.eu-north-1.rds.amazonaws.com",
+#         host="financial-rds.cl6akmuiy6oy.eu-north-1.rds.amazonaws.com",
 #         user="admin",
-#         password="Algoforce1.1",
+#         password="financial1.1",
 #         database=database_name
 #     )
 
@@ -174,12 +174,12 @@
 
 # def fund_create_tradelogs():
 #     table_name = "FUND_TradeLogs"
-#     database_name = 'algoforcedb'
+#     database_name = 'financialdb'
 #     connection = create_connection(database_name)
 #     query = f"SELECT * FROM {table_name}"
 #     tradelogs = pd.read_sql(query, connection)
 #     connection.close()
-#     tradelogs.to_csv("C:\\Users\\User\\Documents\\AlgoforceDashboard_AUG\\AlgoforceDashboard\\afdashboard\\computation_data_app\\FUND_tradelogs.csv")
+#     tradelogs.to_csv("C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\computation_data_app\\FUND_tradelogs.csv")
 
 #     return tradelogs
 
@@ -287,9 +287,9 @@
 
 # def create_connection(database_name):
 #     connection = mysql.connector.connect(
-#         host="algoforce-rds.cl6akmuiy6oy.eu-north-1.rds.amazonaws.com",
+#         host="financial-rds.cl6akmuiy6oy.eu-north-1.rds.amazonaws.com",
 #         user="admin",
-#         password="Algoforce1.1",
+#         password="financial1.1",
 #         database=database_name
 #     )
 
@@ -297,12 +297,12 @@
 
 # def your_account_create_tradelogs():
 #     table_name = "TradeLogs"
-#     database_name = 'algoforcedb1'
+#     database_name = 'financialdb1'
 #     connection = create_connection(database_name)
 #     query = f"SELECT * FROM {table_name}"
 #     tradelogs = pd.read_sql(query, connection)
 #     connection.close()
-#     tradelogs.to_csv("C:\\Users\\User\\Documents\\AlgoforceDashboard_AUG\\AlgoforceDashboard\\afdashboard\\computation_data_app\\tradelogs_your_account.csv")
+#     tradelogs.to_csv("C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\computation_data_app\\tradelogs_your_account.csv")
 
 #     return tradelogs
 

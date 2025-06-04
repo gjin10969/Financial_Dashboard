@@ -59,7 +59,7 @@ clients = {
 def access_trades_live(acc_name):
     path = os.getcwd()
     filename_trades = f"{acc_name}_4H_continuing_trades.csv"
-    live_trades_folder = os.path.join(path, r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\mirrorxfolder')
+    live_trades_folder = os.path.join(path, r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\mirrorxfolder')
     filepath_trades = os.path.join(live_trades_folder, filename_trades)
     return filepath_trades
 
@@ -239,7 +239,7 @@ def main():
                     read_csv_and_insert_to_mysql(conn, csv_file_path, table)
                     print(f"Data inserted into {table} SQL!")
 
-                    ascii_banner = pyfiglet.figlet_format("ALGOFORCE DASHBOARD!!")
+                    ascii_banner = pyfiglet.figlet_format("financial DASHBOARD!!")
                     print(ascii_banner)
 
                 else:

@@ -67,7 +67,7 @@ async def all_metrics_json_data(start_date, end_date):
         latest_entry = None
         latest_timestamp = datetime.min  # Initialize with the earliest possible timestamp
         
-        file_path = r'/home/gjin/Documents/jonathan_project/AlgoforceDashboard/AlgoforceDashboard/afdashboard/computation_data_app/account_metrics.json'
+        file_path = r'/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/afdashboard/computation_data_app/account_metrics.json'
         
         # Print the current working directory
         # print(f"Current working directory: {os.getcwd()}")
@@ -149,7 +149,7 @@ async def metrics_json_data(start_date, end_date, accounts):
         latest_entry = None
         latest_timestamp = datetime.min
         
-        file_path = r'/home/gjin/Documents/jonathan_project/AlgoforceDashboard/AlgoforceDashboard/afdashboard/computation_data_app/account_metrics.json'
+        file_path = r'/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/afdashboard/computation_data_app/account_metrics.json'
         # Print the current working directory
         # print(f"Current working directory: {os.getcwd()}")
         
@@ -233,7 +233,7 @@ async def all_metrics_json_data_entry_data_only(start_date, end_date):
         closest_entry = None
         closest_timestamp = datetime.min  # Initialize with the earliest possible timestamp
         
-        file_path = r'..\AlgoforceDashboard\afdashboard\computation_data_app\account_metrics.json'
+        file_path = r'..\financialDashboard\afdashboard\computation_data_app\account_metrics.json'
         
         # Print the current working directory
         # print(f"Current working directory: {os.getcwd()}")
@@ -303,7 +303,7 @@ async def data_computations(cached_data, start_date, end_date, mirror_accounts, 
             api_data = [entry for entry in api_data if entry.get('symbol') in symbols]
 
         df = pd.DataFrame(api_data)
-        # df.to_csv(r"..\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\storage\data.csv", index=False)
+        # df.to_csv(r"..\jonathan-dashboard\PINAKA_LATEST\financialDashboard\storage\data.csv", index=False)
         df['date'] = pd.to_datetime(df['date']).dt.date
 
         start_date_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
@@ -377,7 +377,7 @@ async def fetch_and_save_historical_klines(filename):
 
 async def calculate_total_fees(filtered_df, start_date, end_date):
     try:
-        filename = r'../AlgoforceDashboard/afdashboard/computation_data_app/historical_klines.csv'
+        filename = r'../financialDashboard/afdashboard/computation_data_app/historical_klines.csv'
         await fetch_and_save_historical_klines(filename)
 
         df_klines = pd.read_csv(filename)
@@ -529,7 +529,7 @@ async def calculate_max_draw(filtered_data_list, filtered_df, accounts, start_da
             maxdd_list['total'] = sf
 
             mdd = maxdd_list['total']['drawdown'].min()
-            with open(r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\storage\maxdraw.csv', 'w') as f:
+            with open(r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\storage\maxdraw.csv', 'w') as f:
                 # Write the header
                 f.write('date,PnL,win,winrate,running_bal,peaks,drawdown\n')
                 
@@ -894,7 +894,7 @@ async def computation2(filtered_data_list, api_data, account_name, start_date, e
 #     df = pd.DataFrame(cached_data)
 
 #     # Save DataFrame to CSV
-#     df.to_csv(r"..\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\storage\cached_data.csv", index=False)
+#     df.to_csv(r"..\jonathan-dashboard\PINAKA_LATEST\financialDashboard\storage\cached_data.csv", index=False)
 
 #     # Create tasks for concurrent execution
 #     if cached_data is None:

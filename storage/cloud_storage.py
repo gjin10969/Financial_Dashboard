@@ -28,7 +28,7 @@ def upload_file_to_supabase(bucket_name: str, file_path: str, file_name: str):
 
 # Usage
 bucket_name = "fetch_data"
-file_path = r"../AlgoforceDashboard/data.json"
+file_path = r"../financialDashboard/data.json"
 file_name = "data.json"
 
 upload_file_to_supabase(bucket_name, file_path, file_name)

@@ -135,7 +135,7 @@ STATIC_ROOT = BASE_DIR / 'static'
 
 # STATICFILES_DIRS = [
 #     BASE_DIR / 'static',
-#     Path(os.path.abspath(r"..\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\output")),
+#     Path(os.path.abspath(r"..\financialDashboard\backtest_implementation_ninja\validate_trades\output")),
 # ]
 
 # Default primary key field type

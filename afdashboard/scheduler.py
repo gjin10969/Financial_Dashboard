@@ -73,7 +73,7 @@ url = 'http://localhost:8000'
 #         # print(result.stderr)
 
 def sql_live_data_scheduler():
-    script_path = r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\afdashboard\sql_live_data_3.py"
+    script_path = r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\afdashboard\sql_live_data_3.py"
     # print(f"Running script: {script_path}")
     result = subprocess.run(['python', script_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     if result.returncode == 0:
@@ -83,7 +83,7 @@ def sql_live_data_scheduler():
         print("Script encountered an error.")
         print(result.stderr)
 def binance_data_api_scheduler():
-    script_path = r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\afdashboard\binance_data.py"
+    script_path = r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\afdashboard\binance_data.py"
     # print(f"Running script: {script_path}")
     result = subprocess.run(['python', script_path], stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     if result.returncode == 0:

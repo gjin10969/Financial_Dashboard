@@ -64,4 +64,4 @@ urlpatterns = [
 
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-# urlpatterns += static('/models/', document_root=os.path.abspath(r"..\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115"))
+# urlpatterns += static('/models/', document_root=os.path.abspath(r"..\financialDashboard\backtest_implementation_ninja\validate_trades\models\ATOMUSDT\ATOMUSDT_P0501\ATOMUSDT_115"))

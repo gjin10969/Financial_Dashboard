@@ -10,7 +10,7 @@ import ta
 
 def get_features(df2, symbol, model = None):
 
-    windows_folder = r"..\AlgoforceDashboard\backtest_implementation_ninja\validate_trades\windows"
+    windows_folder = r"..\financialDashboard\backtest_implementation_ninja\validate_trades\windows"
     
     default_periods = {
         'zscore_period': 7,

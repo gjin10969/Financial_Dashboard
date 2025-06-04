@@ -4,7 +4,7 @@ import asyncio
 
 
 # testing and diskcached storage no need to run http://localhost:8000/api/get_data. because it load on cachefile storage!zzyy
-# cache = diskcache.Cache(r"/home/gjin/Documents/jonathan_project/AlgoforceDashboard/AlgoforceDashboard/afdashboard/cachefile")
+# cache = diskcache.Cache(r"/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/afdashboard/cachefile")
 
 # ramcached needs to execute the URL in a browser using the following address: http://localhost:8000/api/get_data.
 cache = LRUCache(maxsize=1000)

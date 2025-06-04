@@ -250,7 +250,7 @@ if __name__ == "__main__":
     timestamp_utc = utc_time.strftime("%Y-%m-%d %H:%M:%S")
 
     metrics_result = asyncio.run(metrics(accounts))
-    save_metrics_to_json(metrics_result, timestamp_utc, r'C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\account_metrics.json')
+    save_metrics_to_json(metrics_result, timestamp_utc, r'C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\account_metrics.json')
     print(f"Metrics have been saved to account_metrics.json with timestamp: {timestamp_utc}")
 
 print('Successfully')

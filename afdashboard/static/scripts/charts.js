@@ -1,8 +1,8 @@
 var options = {
     series: [
-    // Algoforce1
+    // financial1
     {
-      name: 'Algoforce1',
+      name: 'financial1',
       data: [
         {
           x: 'XGBOOST',
@@ -13,9 +13,9 @@ var options = {
         },
       ]
     },
-    // Algoforce2
+    // financial2
     {
-      name: 'Algoforce2',
+      name: 'financial2',
       data: [
         {
           x: 'XGBOOST',
@@ -33,9 +33,9 @@ var options = {
         }
       ]
     },
-    // Algoforce5
+    // financial5
     {
-      name: 'Algoforce5',
+      name: 'financial5',
       data: [
         {
           x: 'XGBOOST',
@@ -151,9 +151,9 @@ var options = {
         }
       ]
     },
-    // Algoforce3
+    // financial3
     {
-      name: 'Algoforce3',
+      name: 'financial3',
       data: [
         {
           x: 'Dart',
@@ -164,9 +164,9 @@ var options = {
         }
       ]
     },
-    // Algoforce4
+    // financial4
     {
-      name: 'Algoforce4',
+      name: 'financial4',
       data: [
         {
           x: 'Dart',
@@ -242,7 +242,7 @@ var options = {
     type: 'radar',
   },
   title: {
-    text: 'Algoforce Winrate Per Month'
+    text: 'financial Winrate Per Month'
   },
   xaxis: {
     categories: ['January', 'February', 'March', 'April', 'May', 'June']

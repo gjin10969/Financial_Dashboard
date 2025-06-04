@@ -16,8 +16,8 @@ GROUP_USERNAME_1 = 'CoingraphNews'
 GROUP_USERNAME = 'chain_alerts'
 
 IMAGE_SAVE_PATH = 'images'
-JSON_SAVE_PATH = r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\static\news_output\accounts_binance.json'
-JSON_SAVE_PATH_1 = r'C:\Users\User\Documents\AlgoforceDashboard_AUG\AlgoforceDashboard\afdashboard\static\news_output\coingraphnews.json'
+JSON_SAVE_PATH = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\static\news_output\accounts_binance.json'
+JSON_SAVE_PATH_1 = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\static\news_output\coingraphnews.json'
 
 async def start_client():
     client = TelegramClient('session_name', API_ID, API_HASH)

@@ -291,7 +291,7 @@ async def data_computations(cached_data, start_date, end_date, mirror_account, c
             api_data = [entry for entry in api_data if entry.get('symbol') in symbols]
 
         df = pd.DataFrame(api_data)
-        df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\storage\data.csv", index=False)
+        df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\storage\data.csv", index=False)
         df['date'] = pd.to_datetime(df['date']).dt.date
 
         start_date_dt = datetime.strptime(start_date, "%Y-%m-%d").date()
@@ -862,7 +862,7 @@ async def value():
     df = pd.DataFrame(cached_data)
 
     # Save DataFrame to CSV
-    df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\AlgoforceDashboard\storage\cached_data.csv", index=False)
+    df.to_csv(r"C:\Users\User\Documents\jonathan-dashboard\PINAKA_LATEST\financialDashboard\storage\cached_data.csv", index=False)
 
     # Create tasks for concurrent execution
     if cached_data is None:
