@@ -1,0 +1,316 @@
+{% extends 'layout/backtest_base.html' %}
+{% load static %}
+
+{% block content %} 
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/backtest.css' %}">
+    </head>
+    <body>
+    <div class="container-fluid">
+        <nav class="navbar bg-body-tertiary d-flex justify-content-end">
+            <div class="btn-group">
+                <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#backtestModal">
+                    Backtest Now
+                </button>
+            </div>
+            <div class="modal fade" id="backtestModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">Backtest</h1>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col">
+                                <span class="label-check">Symbol</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ALL" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            All
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="BTCUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            BTCUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ETHUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            ETHUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="BNBUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            BNBUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="MATICUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            MATICUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="AVAXUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            AVAXUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="LINKUSDT" id="symbol_backtestT">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            LINKUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="SOLUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            SOLUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="XRPUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            XRPUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="DOTUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            DOTUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ADAUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            ADAUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="ATOMUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            ATOMUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="LTCUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            LTCUSDT
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="UNIUSDT" id="symbol_backtest" name="form_symbol">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            UNIUSDT
+                                        </label>
+                                    </div>
+                                </div>
+                            <div class="col">
+                                <span class="label-check">Model</span>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0201" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0201
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0202" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0202
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0301" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0301
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0302" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0302
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0401" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0401
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0402" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0402
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0501" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0501
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="P0502" id="model_backtest" name="form_model">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        P0502
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <span class="label-check">Interval</span>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="1m" id="interval_backtest" name="form_interval">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            1m
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="1h" id="interval_backtest" name="form_interval">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            1h
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="4h" id="interval_backtest" name="form_interval">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            4h
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="1D" id="interval_backtest" name="form_interval">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            1D
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="1M" id="interval_backtest" name="form_interval">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            1M
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="3M" id="interval_backtest" name="form_interval">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            3M
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="1Y" id="interval_backtestT">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            1Y
+                                        </label>
+                                    </div>
+                            </div>
+                            <div class="col">
+                                <input class="form-control" type="file" id="formFileMultiple" multiple>
+                              </div>
+                            <div class="col d-flex justify-content-end">
+                                <form name="date-range-form" id="date-range-form" method="POST">
+                                    {% csrf_token %}
+                                    <label for="start" class="fonty">Trade Start:</label><br>
+                                    <input type="date" id="backtest_start" name="start"><br>
+                                    <label for="date" class="fonty">Trade End:</label><br>
+                                    <input type="date" id="backtest_end" name="end">
+                                    <!-- <input type="text" value = 'ALL' id="coin" name="coins" hidden> -->
+                                    <br><br>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-success" id="backtest_button">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </nav>
+        <div class="modal fade" id="generatedModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Backtest Results</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="backtest_load_container"></div>
+                    <div id="generated_files_container" class="generated-files-container"></div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h3>History</h3>
+            </div>
+        </div>
+        <div class="row">
+            <table id="data-table" class="display">
+                <thead>
+                    <tr>
+                        <th class="backtest-header">Backtest ID</th>
+                        <th class="backtest-header">Symbol</th>
+                        <th class="backtest-header">Version</th>
+                        <th class="backtest-header">Interval</th>
+                        <th class="backtest-header">Trade Start Date</th>
+                        <th class="backtest-header">Trade End Date</th>
+                        <th class="backtest-header">Date and Time</th>
+                        <th class="backtest-header">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="backtest_data_body">
+                    <!-- Rows will be dynamically added here -->
+                </tbody>
+            </table>
+            <div class="modal fade" id="files-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="exampleModalLabel">Results Summary</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col">
+                                    <table id="modal-livetrade-table">
+                                        <thead>
+                                            <tr>
+                                                <th>Decision Boundary</th>
+                                                <th>SVM Backtest</th>
+                                                <th>SVM Backtest 1</th>
+                                                <th>Drawdown</th>
+                                                <th>Equity Curve</th>
+                                                <th>Monthly Return</th>
+                                                <th>Reports</th>
+                                                <th>Trade Returns</th>
+                                                <th>Tradesheet</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <!-- Livetrade data will be inserted here -->
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer d-flex justify-content-start">
+                            <h5>Discrepancies</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="{% static 'scripts/backtest.js' %}"></script>
+    </body>
+</html>
+{% endblock content %}

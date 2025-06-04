@@ -1,0 +1,67 @@
+/* Grid Start */
+.card {
+    border: none;
+}
+
+#info-head {
+    color: #ffd700;
+    background-color: #060b01;
+}
+
+#info-title { 
+    color: #ffd700;
+    background-color: #060b01;
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
+    
+}
+
+#info-content { 
+    color: #ffd700;
+    background-color: #060b01;
+}
+
+.list-group-item {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+h2 {
+    font-weight: 500;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-size: 25px;
+    color: #ffd700;
+    margin-bottom: 17px;
+    /* margin-left: 25px; */
+}
+
+.space {
+    margin-top: 20px;
+}
+
+.col {
+    background-color: #060b01;
+}
+
+.data {
+    color: #ffd700;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 150;
+}
+
+.title {
+    opacity: 0.7;
+    margin-left: 30px;
+}
+
+.tabs {
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.item {
+    font-family: sans-serif;
+    color: #f0cc2b;
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% block title %}AlgoForce Dashboard{% endblock %}</title>
+        {% load django_bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+        {% load static %}   
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+
+        <!-- Cropper CSS Path -->
+        <!-- <script src="../static/css/CustomScrollbar/jquery.mCustomScrollbar.min.css"></script> -->
+
+        <!-- CustomScrollbar Path CSS-->
+        <!-- <link rel="stylesheet" href="../static/css/CustomScrollbar/jquery.mCustomScrollbar.min.css"> -->
+
+        <!--Rangslider CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
+
+        <!-- Dropzone CSS -->
+        <link rel="stylesheet" href="https://unpkg.com/dropzone@5/dist/min/dropzone.min.css" type="text/css" />
+
+        <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+
+        <!-- Slick CSS -->
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+        <!-- SweetAlert2 CSS -->
+        <link href=" https://cdn.jsdelivr.net/npm/sweetalert2@11.10.4/dist/sweetalert2.min.css " rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/apexcharts@3.27.0/dist/apexcharts.min.css">
+
+        <script src="https://cdn.plot.ly/plotly-2.27.0.min.js" charset="utf-8"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+<!-- added test lang date range -->
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/dayjs@1.10.7/dayjs.min.js"></script>
+
+        <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+        <!-- Add this line to your HTML file -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+        <!-- AG Charts -->
+        <script src="https://cdn.jsdelivr.net/npm/ag-charts-community/dist/umd/ag-charts-community.js"></script>
+        
+        <!-- Lodash -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+
+    </head>
+    <body>
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-list" viewBox="0 0 16 16" id="toggleSidebarBtn">
+            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+        <section class="sidebar" id="sidebar">
+            {% include "includes/sidebar-nav.html" %}
+        </section>
+        <header class="header" id="header">
+            {% include "includes/navigation.html" %}
+        </header>
+        <section id="load">
+            <div class="loader">
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+                <span style="--i:4;"></span>
+                <span style="--i:5;"></span>
+                <span style="--i:6;"></span>
+                <span style="--i:7;"></span>
+                <span style="--i:8;"></span>
+                <span style="--i:9;"></span>
+                <span style="--i:10;"></span>
+                <span style="--i:11;"></span>
+                <span style="--i:12;"></span>
+                <span style="--i:13;"></span>
+                <span style="--i:14;"></span>
+                <span style="--i:15;"></span>
+                <span style="--i:16;"></span>
+                <span style="--i:17;"></span>
+                <span style="--i:18;"></span>
+                <span style="--i:19;"></span>
+                <span style="--i:20;"></span>
+                <span class="loading-text">Algoforce<br>Dashboard</span>
+            </div>
+        </section>
+        <section id="main">
+                {% block content %}
+
+                {% endblock content %}
+        </section>
+    </body>
+    <script src="{% static 'scripts/base.js' %}"></script>
+</html>
+

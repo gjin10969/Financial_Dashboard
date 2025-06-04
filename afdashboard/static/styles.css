@@ -1,0 +1,489 @@
+@media (min-width: 300px){
+    /* Grid Start */
+body{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "side header"
+    "side main";
+    background-color: #060b01;
+
+}
+
+.sidebar{
+    /* background-color: #1c1f23; */
+    background-color: #060e0a;
+    grid-area: side;
+    height: 100%;
+}
+
+.header {
+    background-color: transparent;
+    /* grid-area: header; */
+    /* padding: 10px; */
+}
+
+/* Grid end */
+
+
+
+.logo {
+    width: 35px;
+    height: 35px; 
+}
+
+h1, h2, h3 {
+    color: #ffd700;
+}
+
+.af-title{
+    padding-left: 0.6rem;
+    font-family: sans-serif;
+}
+
+/* Table start */
+
+.table-responsive {
+display: block;
+width: 100%;
+overflow-x: auto;
+-webkit-overflow-scrolling: touch; 
+}
+
+.table {
+    width: 100%;
+    color: f0cc2b;
+    background-color: transparent; 
+}
+
+td {
+    font-size: 14px;
+}
+
+.table th,
+.table td {
+    padding: 1.3rem;
+    vertical-align: top;
+    border-top: 1px solid #e9ecef; 
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #e9ecef; 
+}
+
+.table .thead-light th {
+    color: #8898aa;
+    background-color: #f6f9fc;
+    border-color: #e9ecef; }
+
+.table tbody + tbody {
+    border-top: 2px solid #e9ecef; 
+}
+
+/* Table end */
+
+
+/* Image CSS Start */
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.image-item {
+    flex: 1 1 300px; /* Adjust the 300px to the desired width */
+    margin: 10px;
+}
+
+.image-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Image CSS End */
+
+hr {
+    color: #ffff; /* Line color */
+    margin-right: 15%;
+}
+
+#us-realtime-time us-realtime-time{
+    width: 5px;
+}
+
+#nine {
+    size: 1px;
+}
+
+.col-9 {
+    width: 1px;
+}
+
+.main-con {
+    margin-top: 50px;
+}
+}
+
+/* @media (min-width: 360px) and (max-width: 560px) {
+    body {
+        margin-top: 150px;
+    }
+    .header {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1920px) {
+    .sidebar {
+        height: 108%;
+    }
+} */
+
+.acc {
+    margin-top: 15px;
+    margin-left: 20px;
+    font-size: 30px;
+    font-weight: 200px;
+    font-family: sans-serif;
+    color: #f0cc2b;
+}
+
+.modal-content {
+    background-color: #0e121c;
+}
+
+.fonty {
+    color: white;
+}
+
+#load {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #042104;
+    z-index: 9999; /* Ensure it appears on top of other content */
+    animation: animateBg 10s linear infinite;
+}
+
+
+@keyframes animateBg
+{
+    0%
+    {
+        filter: hue-rotate(0deg);
+    }
+    100%
+    {
+        filter: hue-rotate(360deg);
+    }
+}
+#load .loader
+{
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+#load .loader span
+{
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(18deg * var(--i)));
+}
+@media (max-width: 1920px){
+    #load .loader span
+{
+    position: absolute;
+    top: 400px;
+    left: 900px;
+}
+}
+@media (max-width: 1827px){
+    #load .loader span
+{
+    position: absolute;
+    top: 400px;
+    left: 865px;
+}
+}
+@media (max-width: 1779px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 830px;
+}
+}
+@media (max-width: 1740px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 770px;
+}
+}
+@media (max-width: 1696px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 775px;
+}
+}
+@media (max-width: 1658px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 760px;
+}
+}
+@media (max-width: 1658px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 730px;
+}
+}
+@media (max-width: 1573px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 700px;
+}
+}
+@media (max-width: 1524px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 670px;
+}
+}
+@media (max-width: 1483px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 630px;
+}
+}
+@media (max-width: 1405px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 600px;
+}
+}
+@media (max-width: 1368px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 570px;
+}
+}
+@media (max-width: 1243px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 540px;
+}
+}
+@media (max-width: 1151px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 500px;
+}
+}
+@media (max-width: 1151px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 470px;
+}
+}
+@media (max-width: 1000px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 400px;
+}
+}
+@media (max-width: 836px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+}
+@media (max-width: 800px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 385px;
+}
+}
+@media (max-width: 757px){
+    #load .loader span
+{
+    position: absolute;
+    top: 400;
+    left: 340px;
+}
+}
+@media (max-width: 658px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 350px;
+}
+}
+@media (max-width: 608px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 270px;
+}
+}
+@media (max-width: 563px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 230px;
+}
+}
+@media (max-width: 528px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 210px;
+}
+}
+@media (max-width: 500px){
+    #load .loader span
+{
+    position: absolute;
+    top: 350px;
+    left: 190px;
+}
+}
+#load .loader span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #00ff0a;
+    box-shadow: 0 0 10px #00ff0a,
+                0 0 20px #00ff0a,
+                0 0 30px #00ff0a,
+                0 0 40px #00ff0a,
+                0 0 50px #00ff0a,
+                0 0 60px #00ff0a,
+                0 0 70px #00ff0a,
+                0 0 80px #00ff0a,
+                0 0 90px #00ff0a,
+                0 0 100px #00ff0a;
+    animation: animate 2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+@keyframes animate
+{
+    0%
+    {
+        transform: scale(1);
+    }
+    80%, 100%
+    {
+        transform: scale(0);
+    }
+}
+
+.loading-text {
+    margin-top: 32px;
+    margin-left: 21px;
+    transform: translate(-50%, -50%);
+    font-family: sans-serif;
+    color: white;
+    font-size: 17px; /* Adjust font size as needed */
+    font-style: italic; /* Make the text italic */
+}
+
+#accounts {
+    justify-content: center;
+}
+
+#toggleSidebarBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 9999; /* Ensure the button stays on top */
+    display: none;
+}
+
+.sidebar {
+    width: 12.3rem;
+    /* font-size: 3rem; */
+}
+
+@media (max-width: 575px) {
+    #toggleSidebarBtn {
+        display: block;
+        margin-right: 10px;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(179, 207, 52); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #86a911; 
+  }

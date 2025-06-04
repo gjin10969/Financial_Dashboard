@@ -1,0 +1,19 @@
+django_bootstrap5==23.3
+chartjs==1.2
+# mysqlclient
+django
+pandas==2.2.0
+numpy==1.26.3
+django-bootstrap-v5
+sqlalchemy==2.0.25
+django-ninja==1.1.0
+binance
+python-binance
+mysql-connector-python==8.3.0
+pyarrow
+cachetools
+diskcache
+pyfiglet
+tabulate
+channels
+orjson

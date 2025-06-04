@@ -1,0 +1,138 @@
+<!-- Top Nav Bar -->
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/static/css/navigation.css">        
+    </head>
+    <body>
+<!-- Header -->
+<nav class="navbar bg-body-tertiary">
+    <!-- Card stats -->
+    <div class="row gx-12 justify-content-center">
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Total Balance</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id = "total-balance">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Total Realized PNL</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id="total-realizedPnl">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Return</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id = "return">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Unrealized PnL</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id = "unrealized-pnl">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Trading Days</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id ="trading-days-value">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Winning Days</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span= id = "winning-days">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Total Trades</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id ="total-trades">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Win Rate</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id = "win_rate">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Max Drawdown</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id="max-draw-down">Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <div class="col-sm-1">
+            <div class="card card-stats" id="card-container">
+                <div class="card-header px-0 py-1 text-center" id="card-heading">Total Fees</div>
+                <!-- Card body -->
+                <div class="card-body text-center" id="card-data">
+                    <div class="val">
+                        <span id ="total-fees" >Loading...</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+</body>
+<script src="static/scripts/navigation.js" type="module"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+
+</html>
+<!-- End Nav Bar -->

@@ -1,0 +1,182 @@
+.side-nav {
+    width: 100%;
+    height: 100%;
+    background-color: #060e0a;
+    color: white;
+    transition: width 0.3s ease; /* Add transition for smooth resizing */
+}
+
+.side-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.side-nav li {
+    padding: 10px;
+}
+
+.menu-link {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.menu-link {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.menu-link:after {
+    content: '';
+    position: absolute;
+    width: 0; /* Set initial width to 0 */
+    height: 2px;
+    bottom: 0;
+    left: 50%; /* Start from the middle */
+    transform: translateX(-50%); /* Adjust to center the underline */
+    background-color: white; /* Set the color of the underline */
+    transition: width 0.3s ease, left 0.3s ease; /* Apply transition to width and left properties */
+}
+
+.menu-link:hover:after {
+    width: 100%; /* Expand width to both sides */
+
+}
+
+.date_filter {
+    width: 4rem;
+}
+
+@media (max-width: 1497px) {
+    .sidebar-nav {
+        font-size: 0.9rem;
+    }
+
+    /* li {
+        width: 0.3rem;
+    } */
+
+    .bi {
+        width: 0.9rem;
+    }
+
+    #acc-filters, #filters {
+        width: 2.1rem;
+    }
+
+    .resbut {
+        width: 4.1rem;
+        height: 2.3rem;
+        font-size: 0.8rem;
+    }
+
+    .resbot {
+        width: 5.4rem;
+        height: 2.1rem;
+        font-size: 0.8rem;
+    }
+
+    .resbat {
+        width: 3.8rem;
+        height: 1.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 1373px) {
+    .sidebar-nav {
+        font-size: 0.8rem;
+    }
+
+    /* li {
+        width: 0.3rem;
+    } */
+
+    .bi {
+        width: 0.8rem;
+    }
+
+    #filters {
+        width: 1.9rem;
+    }
+
+    .resbut, #acc-filter {
+        width: 3.9rem;
+        height: 2.1rem;
+        font-size: 0.7rem;
+    }
+
+    .resbot {
+        width: 5.2rem;
+        height: 1.9rem;
+        font-size: 0.7rem;
+    }
+
+    .resbat {
+        width: 3.6rem;
+        height: 1.6rem;
+        font-size: 0.7rem;
+    }
+}
+
+.custom-swal-popup {
+    width: 400px;
+    height: 200px;
+    /* Add additional styling if needed */
+}
+
+.icon {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 8px; /* Adjust the space between the icon and text as needed */
+}
+
+.dl {
+    width: 11rem;
+    height: 2.5rem;
+}   
+
+/* Custom class with the same styles as dropdown-item */
+.custom-dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-decoration: none;
+  }
+  .custom-dropdown-item:hover,
+  .custom-dropdown-item:focus {
+    color: #16181b;
+    text-decoration: none;
+    background-color: #f8f9fa;
+  }
+  .custom-dropdown-item:active {
+    color: #fff;
+    background-color: #007bff;
+    text-decoration: none;
+  }
+  .custom-dropdown-item.disabled,
+  .custom-dropdown-item:disabled {
+    color: #6c757d;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  #compare {
+    width: 3em;
+    height: 3em;
+  }
+
+  .form-check, .label-check{
+    color: white;
+    align-self: center;
+  }

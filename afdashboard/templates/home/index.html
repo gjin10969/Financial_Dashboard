@@ -1,0 +1,86 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block content %}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    </head>
+    <body>
+<div id="overviewTab" class="page-content" style="display: block;">
+  <div class="container-fluid" id="content">
+        <!-- Full page spinner -->
+        <div id="fullPageSpinner" class="spinner-overlay d-none">
+          <div class="spinner-border text-primary" style="width: 8rem; height: 8rem;" role="status">
+              <span class="visually-hidden">Loading...</span>
+          </div>
+      </div>
+    <div class="row justify-content-center" id="index-first-row">
+        <div class="col-md-6">
+            <div id="cumulativeLineChart1"></div>
+            <!-- linechart -->
+            <p id="labelData"></p>
+        </div>
+        <div class="col-md-6">
+            <div id="cumulativeBarChart2"></div>
+            <!-- barchart -->
+            <p id="labelData"></p>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-center">
+      <div class="col-xxl" id="symbols">
+      <!-- Coins/Symbols Winrate -->
+      </div>
+    </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-xl-4" id="coint-trade">
+      <!-- Coins/Symbols num of trades -->
+      </div>
+      <div class="col-xl-4" id="coint-profit">
+      <!-- Coins/Symbols Profitable trades -->
+      </div>
+      <div class="col-xl-4" id="coint-unprofit">
+        <!-- Coins/Symbols Profitable trades -->
+      </div>
+  </div>
+  <br>
+  <br>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-4" id="bs">
+    </div>
+    <div class="col-md-4">
+      <div id="polar-chart">
+            <!-- polar chart account winrate -->
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="section-title" style="color: #f2f2f2;">Newsfeed</div>
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner" id="carouselInner">
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+</div>
+</div>
+
+<!-- js path for this module-->
+<script src="{% static 'scripts/index.js' %}", type="module"></script>
+
+<!-- <script src="../scripts/datefilter.js"></script> -->
+{% comment %} <p>Width: <span id="width"></span> px</p>
+<p>Height: <span id="height"></span> px</p>  {% endcomment %}
+
+</body>
+</html>
+{% endblock content %} 

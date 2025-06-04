@@ -1,0 +1,40 @@
+{% extends 'layout/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/transaction_logs.css' %}">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <h1 id="logs-title">Transaction Logs</h1>
+        </div>
+    </div>
+    <br><br><br>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h3>Datetime</h3>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <h3>Transaction type</h3>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <h3>Amount</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h6>February 28, 2024</h6>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <h6>DEPOSIT</h6>
+        </div>
+        <div class="col d-flex justify-content-center">
+            <h6>$ 1,500.00</h6>
+        </div>
+    </div>
+</div>
+
+<script src="{% static 'scripts/transaction_logs.js' %}"></script>
+
+{% endblock content %}

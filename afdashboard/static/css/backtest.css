@@ -1,0 +1,105 @@
+/* Grid Start */
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 100px 1fr;
+    grid-template-areas: 
+    "side header"
+    "side main";
+    background-color: #060b01;
+}
+
+h1, h2, h3, h4 ,h5, h6, p, #heading {
+    color: #ffd700;
+    margin: 15px;
+}
+
+th, td {
+    color: #eee4ec;
+    margin: 20px;
+}
+
+#ohyeah {
+    margin-top: 20px;
+}
+
+.generated-files-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.file-item {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.file-item img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.file-item a {
+    color: #f0cc2b;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.file-item a:hover {
+    text-decoration: underline;
+}
+
+.backtest-header {
+    color: #f0cc2b;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#backtest_data_body {
+    color: #f0cc2b;
+    text-decoration: none;
+    font-weight: lighter;
+}
+
+    /* Customize the search input */
+    #data-table_filter label {
+        color: white; /* Label color */
+    }
+
+    #data-table_filter input {
+        background-color: #333; /* Background color */
+        color: white; /* Text color */
+        border: 1px solid #555; /* Border color */
+        padding: 5px; /* Padding */
+    }
+
+    /* Customize the pagination controls */
+    .dataTables_paginate .paginate_button {
+        color: white; /* Text color */
+        background-color: #444; /* Background color */
+        border: 1px solid #555; /* Border color */
+        padding: 5px 10px; /* Padding */
+        margin: 0 2px; /* Margin between buttons */
+        border-radius: 3px; /* Rounded corners */
+    }
+
+    .dataTables_paginate .paginate_button:hover {
+        background-color: #555; /* Background color on hover */
+    }
+
+    .dataTables_paginate .paginate_button.current {
+        background-color: #007bff; /* Background color for the current page */
+        color: white; /* Text color */
+        border: 1px solid #007bff; /* Border color */
+    }
+
+    /* Customize the information label */
+    #data-table_info {
+        color: white; /* Text color */
+    }

@@ -1,0 +1,147 @@
+{% extends 'layout/cointegration-dashboard_base.html' %}
+{% load static %}
+
+{% block content %} 
+
+<!-- myapp/templates/myapp/bar_chart.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/cointegration-dashboard.css' %}">
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <span class="space"></span>
+        <h2>Cointegration Profit and Loss Analysis</h2>
+    </div>
+    <div class="row">
+            <div class="card">
+                    <div class="row">
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Total Profit</p>
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="total_profit">Loading...</p></span>
+                        </div>
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Losing Days</p>                    
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="total_losing_days" >Loading...</p></span>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Total Loss</p>                       
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="total_loss">Loading...</p></span>
+                        </div>
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Profit/Loss Ratio</p>
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="profit_loss_ratio">Loading...</p></span>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Net Profit/Loss</p>
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="net_profit_loss">Loading...</p></span>
+                        </div>
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Average Profit</p>
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="average_profit">Loading...</p></span>
+                        </div>
+                        </li>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Win Rate</p>                     
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="win_rate">Loading...</p></span>
+                        </div>
+                        <div class="col">
+                            <li class="list-group-item" id="info-title"><p class="title">Average Loss</p>
+                        </div>
+                        <div class="col">
+                            <span class="data d-flex justify-content-end" id=""><p class="content" id="average_loss">Loading...</p></span>
+                        </div>
+                        </li>
+                    </div>
+            </div>
+    </div>
+    <ul class="nav tabs">
+        <li class="nav-item">
+          <a class="nav-link item" href="#" onclick="showTab('overview')">Overview</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link item" href="#" onclick="showTab('details')">Details</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link item" href="#" onclick="showTab('funding')">Funding Transaction</a>
+        </li>
+      </ul>
+      
+      <div id="overviewTab" class="tab-content" style="display: block;">
+        <!-- Content for Overview tab goes here -->
+        <div class="row">
+            <div class="col">
+                <div id="pnl-chart"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div id="column"></div>
+            </div>
+            <div class="col">
+                <div id="stacked"></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col d-flex justify-content-center">
+                <div id="mono"></div>
+            </div>
+            <div class="col">
+                <div id="line"></div>
+            </div>
+        </div>
+      </div>
+      
+      <div id="detailsTab" class="tab-content" style="display: none;">
+        <div class="table">
+            <table>
+                <tr>
+                    <th> TADA </th>
+                </tr>
+                <tr>
+                    <td> TIDI </td>
+                </tr>
+            </table>
+        </div>
+      </div>
+      
+      <div id="fundingTab" class="tab-content" style="display: none;">
+        <!-- Content for Funding Transaction tab goes here -->
+        Funding Transaction Content
+      </div>
+    <!-- <div class="row">
+        <div class="col d-flex justify-content-center">
+            <div id="polar-chart"></div>
+        </div>
+    </div> -->
+</div>
+</body>
+</html>
+
+<script src="{% static 'scripts/cointegration-dashboard.js' %}" type="module"></script>
+{% endblock %}

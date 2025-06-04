@@ -1,0 +1,145 @@
+{
+    "BTCUSDT": {
+        "zscore_period": 20,
+        "hmabb_period": 42,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 24,
+        "baseline_period": 89,
+        "leadspanb_period": 113,
+        "rsi_period": 33,
+        "poc_period": 278
+    },
+    "BNBUSDT": {
+        "zscore_period": 19,
+        "hmabb_period": 42,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 90,
+        "leadspanb_period": 64,
+        "rsi_period": 50,
+        "poc_period": 211
+    },
+    "SOLUSDT": {
+        "zscore_period": 49,
+        "hmabb_period": 66,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 35,
+        "baseline_period": 90,
+        "leadspanb_period": 74,
+        "rsi_period": 49,
+        "poc_period": 299
+    },
+    "XRPUSDT": {
+        "zscore_period": 49,
+        "hmabb_period": 99,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 77,
+        "leadspanb_period": 62,
+        "rsi_period": 35,
+        "poc_period": 216
+    },
+    "DOTUSDT": {
+        "zscore_period": 41,
+        "hmabb_period": 39,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 90,
+        "leadspanb_period": 61,
+        "rsi_period": 50,
+        "poc_period": 283
+    },
+    "MATICUSDT": {
+        "zscore_period": 19,
+        "hmabb_period": 74,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 49,
+        "baseline_period": 90,
+        "leadspanb_period": 136,
+        "rsi_period": 46,
+        "poc_period": 289
+    },
+    "ADAUSDT": {
+        "zscore_period": 49,
+        "hmabb_period": 42,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 69,
+        "leadspanb_period": 64,
+        "rsi_period": 48,
+        "poc_period": 271
+    },
+    "UNIUSDT": {
+        "zscore_period": 44,
+        "hmabb_period": 29,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 49,
+        "baseline_period": 90,
+        "leadspanb_period": 64,
+        "rsi_period": 50,
+        "poc_period": 289
+    },
+    "LTCUSDT": {
+        "zscore_period": 44,
+        "hmabb_period": 4,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 49,
+        "baseline_period": 89,
+        "leadspanb_period": 67,
+        "rsi_period": 20,
+        "poc_period": 169
+    },
+    "ATOMUSDT": {
+        "zscore_period": 49,
+        "hmabb_period": 50,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 89,
+        "leadspanb_period": 84,
+        "rsi_period": 50,
+        "poc_period": 228
+    },
+    "AVAXUSDT": {
+        "zscore_period": 49,
+        "hmabb_period": 99,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 59,
+        "leadspanb_period": 64,
+        "rsi_period": 50,
+        "poc_period": 299
+    },
+    "ETHUSDT": {
+        "zscore_period": 19,
+        "hmabb_period": 32,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 68,
+        "leadspanb_period": 64,
+        "rsi_period": 25,
+        "poc_period": 265
+    },
+    "LINKUSDT": {
+        "zscore_period": 47,
+        "hmabb_period": 29,
+        "hmabbstdmult": 1.25,
+        "rethma_period": 7,
+        "conversion_line_period": 50,
+        "baseline_period": 77,
+        "leadspanb_period": 64,
+        "rsi_period": 29,
+        "poc_period": 181
+    }
+}

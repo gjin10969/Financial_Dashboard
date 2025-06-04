@@ -1,0 +1,52 @@
+[
+    {
+        "timestamp": "2024-08-31 08:06:12",
+        "metrics": {
+            "total_unrealized_pnl_data": {
+                "MIRRORX1": 120.54856671,
+                "MIRRORX2": 3.31052375,
+                "MIRRORX3": 88.13220034,
+                "MIRRORX4": 0.0,
+                "MIRRORX5": 5.31067114,
+                "MIRRORXFUND": 1.9953,
+                "MIRRORXTOTAL": 219.29726194
+            },
+            "total_return_data": {
+                "MIRRORX1_1": -6.309812861325915,
+                "MIRRORX2": -18.13,
+                "MIRRORX3": 0.46000000000000085,
+                "MIRRORX4": -16.689999999999998,
+                "MIRRORX5": -13.82,
+                "MIRRORXFUND": -6.43,
+                "MIRRORXTOTAL": -60.91981286132591
+            },
+            "total_balance_data": {
+                "MIRRORX1_1": 104814.78036941,
+                "MIRRORX2": 9866.46675325,
+                "MIRRORX3": 11821.81273074,
+                "MIRRORX4": 9998.25388896,
+                "MIRRORX5": 10267.49958917,
+                "MIRRORXFUND": 11165.03693423,
+                "MIRRORXTOTAL": 157933.85026576003
+            },
+            "margin_total_data": {
+                "MIRRORX1_1": 104935.32893612,
+                "MIRRORX2": 9869.777277000001,
+                "MIRRORX3": 11909.94493108,
+                "MIRRORX4": 9998.25388896,
+                "MIRRORX5": 10272.81026031,
+                "MIRRORXFUND": 11167.03223423,
+                "MIRRORXTOTAL": 158153.1475277
+            },
+            "profit_dollar_data": {
+                "MIRRORX1_1": -7080.871992979941,
+                "MIRRORX2": -22098.657,
+                "MIRRORX3": 559.571600000001,
+                "MIRRORX4": -20301.549099999997,
+                "MIRRORX5": -16799.730199999998,
+                "MIRRORXFUND": -7840.420499999999,
+                "MIRRORXTOTAL": -73561.65719297992
+            }
+        }
+    }
+]

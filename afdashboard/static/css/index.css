@@ -1,0 +1,160 @@
+/* Grid Start */
+body{
+    background-color: #060b01;
+    margin-right: 0%;
+}
+
+/* Table start */
+
+.card-header{
+    font-weight: bold;
+    font-size: 1vw;
+}
+/* 
+.carousel {
+    position: relative;
+}
+
+.carousel-inner {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+    height: 100%;
+    color: #000;
+}
+
+.carousel-control-prev {
+    left: 0;
+}
+
+.carousel-control-next {
+    right: 0;
+} */
+
+.profits-table {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to the table */
+}
+
+.trades-table {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to the table */
+}
+
+.profits-table th, .profits-table td {
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: #2a3110;
+    color: #ffd700;
+    border: none;
+}
+
+.trades-table th, .trades-table td {
+    font-size: 0.9em;
+    padding: 10px;
+    background-color: #2a3110;
+    color: #ffd700;
+    border: none;
+}
+
+.profits-table th {
+    background-color: #333f0e;
+    color: #ffd700;
+}
+
+.trades-table th {
+    background-color: #333f0e;
+    color: #ffd700;
+}
+
+.profits-title, .trades-title {
+    color: #57584a;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.scrollable-table-body {
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.scrollable-table-body table {
+    width: 100%;
+}
+
+.scrollable-table-body table thead,
+.scrollable-table-body table tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+
+#fullPageSpinner {
+    margin-left: 590px;
+    margin-top: 190px;
+}
+
+#buy {
+    color: black;
+    background-color: #66ff33;
+}
+
+#sell {
+    color: black;
+    background-color: #ff1a1a;
+}
+
+#buySellTable {
+    width: 200px;
+    height: 120px;
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensure rounded corners apply to the table */
+    border-collapse: collapse; /* Merge table borders */
+}
+
+#polar-chart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+    min-height: 400px;
+    width: 100%;
+    height: 100%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #57584a;
+    font-family: Arial, sans-serif;
+}
