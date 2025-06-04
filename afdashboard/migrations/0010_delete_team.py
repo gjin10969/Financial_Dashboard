@@ -6,7 +6,7 @@ from django.db import migrations
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('afdashboard', '0009_mirrorx2_mirrorx3_mirrorx4_mirrorx5_mirrorxfund_team_and_more'),
+        ('dashboard', '0009_mirrorx2_mirrorx3_mirrorx4_mirrorx5_mirrorxfund_team_and_more'),
     ]
 
     operations = [

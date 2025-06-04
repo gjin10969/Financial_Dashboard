@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('afdashboard', '0008_chartdata'),
+        ('dashboard', '0008_chartdata'),
     ]
 
     operations = [

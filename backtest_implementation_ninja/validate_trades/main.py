@@ -2,7 +2,7 @@
 # from datetime import datetime
 # import os
 # from django.conf import settings
-# from afdashboard.views import *
+# from dashboard.views import *
 # from pydantic import BaseModel, ValidationError, ConfigDict
 # from cachetools import cached, LRUCache
 # import asyncio

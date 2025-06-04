@@ -45,7 +45,7 @@ def get_data(symb, interval = '4h'):
         table_name = f'{symb.lower()}_{interval}'
 
     try:
-        engine = db.create_engine('mysql+mysqlconnector://afdashboard:password@192.168.50.39:3306/ohlc')
+        engine = db.create_engine('mysql+mysqlconnector://dashboard:password@192.168.50.39:3306/ohlc')
         query = f"SELECT * FROM {table_name};"
         
         with engine.connect() as conn, conn.begin():

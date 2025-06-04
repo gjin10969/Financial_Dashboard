@@ -6,7 +6,7 @@ Ensure that all necessary dependencies are installed. You can do this by followi
 
 
 ----for database using mysql.---
-open mysql and create schema name afdashboard
+open mysql and create schema name dashboard
 
 ---Install migrate.--
 python manage.py makemigrations

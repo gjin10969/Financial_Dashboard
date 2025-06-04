@@ -164,7 +164,7 @@
 
 
 
-from afdashboard.computation_data_app.cache_manager import fetch_get_data  # Assuming you have this module
+from dashboard.computation_data_app.cache_manager import fetch_get_data  # Assuming you have this module
 import pandas as pd
 from datetime import datetime, timedelta
 from binance.client import Client

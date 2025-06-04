@@ -6,7 +6,7 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('afdashboard', '0006_alter_trades_id_alter_trades_orderid'),
+        ('dashboard', '0006_alter_trades_id_alter_trades_orderid'),
     ]
 
     operations = [

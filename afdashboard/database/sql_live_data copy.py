@@ -14,7 +14,7 @@ import urllib.request
 import pyfiglet
 from tqdm import tqdm
 
-engine = create_engine('mysql+mysqlconnector://root:password@localhost/afdashboard')
+engine = create_engine('mysql+mysqlconnector://root:password@localhost/dashboard')
 
 mirrorxaccount = ["MIRRORX1", "MIRRORX2","MIRRORX3","MIRRORX4", "MIRRORX5","MIRRORXFUND"]
 
@@ -138,7 +138,7 @@ def connect_to_mysql():
         host='localhost',
         user='root',
         password='password',
-        database='afdashboard'
+        database='dashboard'
     )
 def read_csv_and_insert_to_mysql(conn, csv_file_path, mirrorxaccount):
     def read_csv_and_insert_to_mysql_thread(conn, csv_file_path, mirrorxaccount):

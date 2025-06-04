@@ -15,7 +15,7 @@ import pyfiglet
 from tqdm import tqdm
 
 # Database engine setup
-engine = create_engine('mysql+mysqlconnector://root:password@localhost/afdashboard')
+engine = create_engine('mysql+mysqlconnector://root:password@localhost/dashboard')
 
 mirrorxaccount = ["your_account", "your_account", "your_account", "your_account", "your_account", "your_account"]
 your_account_account = "your_account"
@@ -95,7 +95,7 @@ def connect_to_mysql():
         host='localhost',
         user='root',
         password='password',
-        database='afdashboard'
+        database='dashboard'
     )
 
 def read_csv_and_insert_to_mysql(conn, csv_file_path, table_name):
@@ -144,12 +144,12 @@ for initial_mirrorx in tqdm(mirrorxaccount, desc='Processing to SQL'):
     conn = connect_to_mysql()
     
     csv_file_path = os.path.join(
-        r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\mirrorxfolder', 
+        r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\dashboard\mirrorxfolder', 
         f'{initial_mirrorx}_4H_continuing_trades.csv'
     )
     
     your_account_csv_path = os.path.join(
-        r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\mirrorxfolder',
+        r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\dashboard\mirrorxfolder',
         f'{your_account_account}.csv'
     )
     

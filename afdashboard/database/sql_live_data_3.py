@@ -10,13 +10,13 @@ from binance.client import Client
 from tabulate import tabulate
 import time 
 import os
-# from afdashboard.binance_data import *
+# from dashboard.binance_data import *
 import urllib.request
 import pyfiglet
 import csv
 # from scheduler import url
 
-engine = create_engine('mysql+mysqlconnector://root:password@localhost/afdashboard')
+engine = create_engine('mysql+mysqlconnector://root:password@localhost/dashboard')
 
 mirrorxaccount = ["your_account", "your_account","your_account","your_account", "your_account","your_account"]
 
@@ -59,7 +59,7 @@ clients = {
 def access_trades_live(acc_name):
     path = os.getcwd()
     filename_trades = f"{acc_name}_4H_continuing_trades.csv"
-    live_trades_folder = os.path.join(path, r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\mirrorxfolder')
+    live_trades_folder = os.path.join(path, r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\dashboard\mirrorxfolder')
     filepath_trades = os.path.join(live_trades_folder, filename_trades)
     return filepath_trades
 
@@ -151,7 +151,7 @@ def connect_to_mysql():
         host='localhost',
         user='root',
         password='password',
-        database='afdashboard'
+        database='dashboard'
     )
 
 

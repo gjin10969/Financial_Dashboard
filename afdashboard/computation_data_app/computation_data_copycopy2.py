@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import asyncio
 from datetime import datetime
-from afdashboard.computation_data_app.cache_manager import *
+from dashboard.computation_data_app.cache_manager import *
 # from binance_api_secretkey import *
 
 import tracemalloc

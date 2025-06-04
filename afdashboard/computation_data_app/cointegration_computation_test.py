@@ -23,9 +23,9 @@
 
 # your_account_init_balance = 12215.2
 
-# your_account_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
-# fund_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
-# # your_account_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
+# your_account_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\dashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
+# fund_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\dashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
+# # your_account_binance_data = "C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\dashboard\\mirrorxfolder\\your_account_4H_continuing_trades.csv"
 
 # def your_account_read_csv_data():
 #     """Read CSV file and filter data between starting and ending dates."""
@@ -179,7 +179,7 @@
 #     query = f"SELECT * FROM {table_name}"
 #     tradelogs = pd.read_sql(query, connection)
 #     connection.close()
-#     tradelogs.to_csv("C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\computation_data_app\\FUND_tradelogs.csv")
+#     tradelogs.to_csv("C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\dashboard\\computation_data_app\\FUND_tradelogs.csv")
 
 #     return tradelogs
 
@@ -302,7 +302,7 @@
 #     query = f"SELECT * FROM {table_name}"
 #     tradelogs = pd.read_sql(query, connection)
 #     connection.close()
-#     tradelogs.to_csv("C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\afdashboard\\computation_data_app\\tradelogs_your_account.csv")
+#     tradelogs.to_csv("C:\\Users\\User\\Documents\\financialDashboard_AUG\\financialDashboard\\dashboard\\computation_data_app\\tradelogs_your_account.csv")
 
 #     return tradelogs
 

@@ -76,7 +76,7 @@ async def all_metrics_json_data(start_date, end_date):
         latest_entry = None
         latest_timestamp = datetime.min  # Initialize with the earliest possible timestamp
         
-        file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\computation_data_app\account_metrics.json'
+        file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\dashboard\computation_data_app\account_metrics.json'
         
         # Print the current working directory
         print(f"Current working directory: {os.getcwd()}")
@@ -158,7 +158,7 @@ async def metrics_json_data(start_date, end_date, accounts):
         latest_entry = None
         latest_timestamp = datetime.min
         
-        file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\computation_data_app\account_metrics.json'
+        file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\dashboard\computation_data_app\account_metrics.json'
         
         # Print the current working directory
         print(f"Current working directory: {os.getcwd()}")

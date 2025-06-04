@@ -67,7 +67,7 @@ async def all_metrics_json_data(start_date, end_date):
         latest_entry = None
         latest_timestamp = datetime.min  # Initialize with the earliest possible timestamp
         
-        file_path = r'/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/afdashboard/computation_data_app/account_metrics.json'
+        file_path = r'/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/dashboard/computation_data_app/account_metrics.json'
         
         # Print the current working directory
         # print(f"Current working directory: {os.getcwd()}")
@@ -149,7 +149,7 @@ async def metrics_json_data(start_date, end_date, accounts):
         latest_entry = None
         latest_timestamp = datetime.min
         
-        file_path = r'/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/afdashboard/computation_data_app/account_metrics.json'
+        file_path = r'/home/gjin/Documents/jonathan_project/financialDashboard/financialDashboard/dashboard/computation_data_app/account_metrics.json'
         # Print the current working directory
         # print(f"Current working directory: {os.getcwd()}")
         
@@ -233,7 +233,7 @@ async def all_metrics_json_data_entry_data_only(start_date, end_date):
         closest_entry = None
         closest_timestamp = datetime.min  # Initialize with the earliest possible timestamp
         
-        file_path = r'..\financialDashboard\afdashboard\computation_data_app\account_metrics.json'
+        file_path = r'..\financialDashboard\dashboard\computation_data_app\account_metrics.json'
         
         # Print the current working directory
         # print(f"Current working directory: {os.getcwd()}")
@@ -377,7 +377,7 @@ async def fetch_and_save_historical_klines(filename):
 
 async def calculate_total_fees(filtered_df, start_date, end_date):
     try:
-        filename = r'../financialDashboard/afdashboard/computation_data_app/historical_klines.csv'
+        filename = r'../financialDashboard/dashboard/computation_data_app/historical_klines.csv'
         await fetch_and_save_historical_klines(filename)
 
         df_klines = pd.read_csv(filename)

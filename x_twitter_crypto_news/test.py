@@ -4,7 +4,7 @@ from io import BytesIO
 import json
 
 # Path to the JSON file
-json_file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\afdashboard\x_twitter_crypto_news\accounts_binance.json'
+json_file_path = r'C:\Users\User\Documents\financialDashboard_AUG\financialDashboard\dashboard\x_twitter_crypto_news\accounts_binance.json'
 
 # Load the JSON data
 with open(json_file_path, 'r') as file:

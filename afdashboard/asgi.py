@@ -1,5 +1,5 @@
 """
-ASGI config for afdashboard project.
+ASGI config for dashboard project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -15,7 +15,7 @@ from channels.routing import URLRouter
 from channels.auth import AuthMiddlewareStack
 
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'afdashboard.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dashboard.settings')
 
 application = ProtocolTypeRouter({
     'http': get_asgi_application()

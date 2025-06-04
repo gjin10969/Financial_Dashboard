@@ -208,7 +208,7 @@ async def get_data(request):
 
         # Save the result data to a CSV file
         # csv_to_save(result_data)
-        filename = r'..\financialDashboard\afdashboard\computation_data_app\historical_klines.csv'
+        filename = r'..\financialDashboard\dashboard\computation_data_app\historical_klines.csv'
         await asyncio.create_task(fetch_and_save_historical_klines(filename))
         await asyncio.create_task(get_all_data_view(request))
         await asyncio.create_task(get_initial_load(request))
