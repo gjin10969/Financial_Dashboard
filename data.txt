@@ -1,9 +1,0 @@
-{
-    "total_trades": 539,
-    "return_percentage": -31,
-    "total_unrealized_pnl": 1332,
-    "overall_winrate": 49,
-    "adjusted_winrate": 49,
-    "total_balance": 780128,
-    "margin_total": 781460
-}
